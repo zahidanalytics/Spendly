@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="terms-content">
+    <div class="terms-inner">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: March 29, 2026</p>
+        
+        <h2>1. Introduction</h2>
+        <p>
+            At Spendly, we are committed to protecting your privacy and ensuring the security of your personal information. 
+            This Privacy Policy explains how we collect, use, and safeguard your data when you use our personal expense 
+            tracking service. By using Spendly, you agree to the collection and use of information in accordance with this policy.
+        </p>
+
+        <h2>2. Data We Collect</h2>
+        <p>We collect the following types of information:</p>
+        <ul>
+            <li><strong>Account Information:</strong> Email address, username, and password when you create an account</li>
+            <li><strong>Expense Data:</strong> Transaction amounts, categories, dates, descriptions, and merchant information you enter</li>
+            <li><strong>Usage Data:</strong> How you interact with our service, including pages visited and features used</li>
+            <li><strong>Device Information:</strong> IP address, browser type, operating system, and device identifiers</li>
+            <li><strong>Cookies and Tracking:</strong> Information collected through cookies and similar technologies</li>
+        </ul>
+
+        <h2>3. How We Use Your Data</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+            <li>Provide and maintain our expense tracking service</li>
+            <li>Process and analyze your expense data to generate insights and reports</li>
+            <li>Send you important service updates and notifications</li>
+            <li>Improve our service through analytics and user feedback</li>
+            <li>Ensure the security and integrity of our platform</li>
+            <li>Comply with legal obligations and enforce our terms of service</li>
+        </ul>
+
+        <h2>4. Data Storage and Security</h2>
+        <p>
+            Your data is stored securely on encrypted servers. We implement industry-standard security measures including:
+        </p>
+        <ul>
+            <li>SSL/TLS encryption for data transmission</li>
+            <li>Encrypted database storage</li>
+            <li>Regular security audits and updates</li>
+            <li>Access controls and authentication requirements</li>
+            <li>Regular backups with encryption</li>
+        </ul>
+        <p>
+            While we strive to protect your data, no method of transmission over the internet or electronic storage is 100% secure. 
+            We cannot guarantee absolute security but are committed to protecting your information using reasonable measures.
+        </p>
+
+        <h2>5. Data Sharing and Third Parties</h2>
+        <p>
+            We do not sell, trade, or rent your personal information to third parties. We may share your data only in the following circumstances:
+        </p>
+        <ul>
+            <li><strong>Service Providers:</strong> With trusted third-party service providers who help us operate our service (hosting, analytics, customer support)</li>
+            <li><strong>Legal Requirements:</strong> When required by law, court order, or government regulation</li>
+            <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
+            <li><strong>Consent:</strong> With your explicit consent for specific purposes</li>
+        </ul>
+        <p>
+            All third-party service providers are bound by confidentiality agreements and are prohibited from using your data for any purpose other than providing services to us.
+        </p>
+
+        <h2>6. Your Rights and Choices</h2>
+        <p>You have the following rights regarding your data:</p>
+        <ul>
+            <li><strong>Access:</strong> Request a copy of the personal information we hold about you</li>
+            <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data</li>
+            <li><strong>Deletion:</strong> Request deletion of your personal information</li>
+            <li><strong>Portability:</strong> Request transfer of your data in a structured format</li>
+            <li><strong>Opt-out:</strong> Unsubscribe from marketing communications</li>
+        </ul>
+        <p>
+            To exercise these rights, please contact us using the information provided below.
+        </p>
+
+        <h2>7. Cookies and Tracking Technologies</h2>
+        <p>
+            We use cookies and similar technologies to enhance your experience with Spendly. These include:
+        </p>
+        <ul>
+            <li><strong>Essential Cookies:</strong> Required for the service to function properly</li>
+            <li><strong>Analytics Cookies:</strong> Help us understand how users interact with our service</li>
+            <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
+        </ul>
+        <p>
+            You can control cookie settings through your browser preferences, though disabling certain cookies may affect service functionality.
+        </p>
+
+        <h2>8. Data Retention</h2>
+        <p>
+            We retain your personal information for as long as necessary to provide our service and comply with legal obligations. 
+            Account data is retained while your account is active and for a reasonable period after account closure for backup and legal purposes. 
+            You can request deletion of your data at any time, subject to legal retention requirements.
+        </p>
+
+        <h2>9. International Data Transfers</h2>
+        <p>
+            Your data may be transferred to and processed in countries other than your own. We ensure that such transfers 
+            comply with applicable data protection laws and implement appropriate safeguards to protect your information.
+        </p>
+
+        <h2>10. Children's Privacy</h2>
+        <p>
+            Spendly is not intended for children under 13 years of age. We do not knowingly collect personal information 
+            from children under 13. If we become aware that we have collected personal information from a child under 13, 
+            we will take steps to delete such information promptly.
+        </p>
+
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. We will notify you of any material changes by posting 
+            the new policy on this page and updating the "Last updated" date. Your continued use of Spendly after any 
+            changes constitutes acceptance of the updated policy.
+        </p>
+
+        <h2>12. Contact Us</h2>
+        <p>
+            If you have any questions about this Privacy Policy or our data practices, please contact us:
+        </p>
+        <ul>
+            <li>Email: privacy@spendly.app</li>
+            <li>Through your account settings</li>
+            <li>Via the support form on our website</li>
+        </ul>
+
+        <div class="terms-footer">
+            <a href="{{ url_for('landing') }}">← Back to Home</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .terms-content {
+        padding: 5rem 2rem 4rem;
+        background: var(--paper);
+        min-height: calc(100vh - 60px - 100px);
+    }
+    
+    .terms-inner {
+        max-width: 800px;
+        margin: 0 auto;
+        background: var(--paper-card);
+        padding: 3rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border);
+        box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+        line-height: 1.7;
+    }
+    
+    .terms-content h1 {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 2.5rem);
+        margin-bottom: 0.5rem;
+        color: var(--ink);
+        letter-spacing: -0.02em;
+    }
+    
+    .last-updated {
+        color: var(--ink-muted);
+        font-size: 0.85rem;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+    
+    .terms-content h2 {
+        font-size: 1.25rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--ink-soft);
+        font-weight: 600;
+        border-bottom: 1px solid var(--border-soft);
+        padding-bottom: 0.5rem;
+    }
+    
+    .terms-content h2:first-of-type {
+        margin-top: 0;
+    }
+    
+    .terms-content p {
+        color: var(--ink-muted);
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    
+    .terms-content ul {
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+        padding-left: 0;
+    }
+    
+    .terms-content li {
+        color: var(--ink-muted);
+        margin-bottom: 0.5rem;
+        position: relative;
+        padding-left: 0.5rem;
+    }
+    
+    .terms-content li::before {
+        content: "•";
+        color: var(--accent);
+        font-weight: bold;
+        position: absolute;
+        left: -1rem;
+        top: 0;
+    }
+    
+    .terms-content strong {
+        color: var(--ink-soft);
+        font-weight: 600;
+    }
+    
+    .terms-footer {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border);
+        text-align: center;
+    }
+    
+    .terms-footer a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.9rem;
+        transition: color 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .terms-footer a:hover {
+        color: var(--ink);
+        text-decoration: underline;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .terms-content {
+            padding: 3rem 1rem 2rem;
+        }
+        
+        .terms-inner {
+            padding: 2rem;
+        }
+        
+        .terms-content h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+{% endblock %}
