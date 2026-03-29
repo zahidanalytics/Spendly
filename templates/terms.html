@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="terms-content">
+    <div class="terms-inner">
+        <h1>Terms and Conditions</h1>
+        <p class="last-updated">Last updated: March 29, 2026</p>
+        
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+            By accessing and using Spendly (the "Service"), you agree to be bound by these Terms and Conditions. 
+            If you do not agree to abide by the above, please do not use this service. Spendly reserves the right 
+            to update these terms at any time without prior notice.
+        </p>
+
+        <h2>2. Use of Service</h2>
+        <p>
+            Spendly is a personal expense tracking application designed to help you manage and analyze your spending. 
+            You agree to use the Service only for lawful purposes and in a way that does not infringe upon the rights 
+            of others or restrict their use and enjoyment of the Service. Prohibited behavior includes:
+        </p>
+        <ul>
+            <li>Harassing, causing injury to, or annoying any person</li>
+            <li>Transmitting obscene or offensive content</li>
+            <li>Disrupting the normal flow of dialogue within the Service</li>
+            <li>Attempting to gain unauthorized access to the Service</li>
+            <li>Using the Service for commercial purposes without explicit permission</li>
+        </ul>
+
+        <h2>3. User Data</h2>
+        <p>
+            You are responsible for maintaining the confidentiality of your account information and password. 
+            You agree to accept responsibility for all activities that occur under your account. Spendly will 
+            not be liable for any loss or damage arising from your failure to protect your password or account 
+            information.
+        </p>
+        <p>
+            By using Spendly, you grant us the right to store and process your expense data to provide the Service. 
+            Your data is treated in accordance with our Privacy Policy. We implement reasonable security measures 
+            to protect your information, though no system is completely secure.
+        </p>
+
+        <h2>4. Limitations of Liability</h2>
+        <p>
+            Spendly is provided on an "as-is" basis without warranties of any kind. We do not warrant that the 
+            Service will be uninterrupted or error-free, or that any defects will be corrected. In no event shall 
+            Spendly be liable for any indirect, incidental, special, or consequential damages arising out of or 
+            related to your use of the Service.
+        </p>
+        <p>
+            Your sole remedy for dissatisfaction with the Service is to stop using it. We shall not be liable for 
+            any financial losses, data loss, or other damages resulting from the use or inability to use Spendly.
+        </p>
+
+        <h2>5. Changes to Terms</h2>
+        <p>
+            Spendly reserves the right to modify these Terms and Conditions at any time. Changes will be effective 
+            immediately upon posting to the Service. Your continued use of Spendly after any modification constitutes 
+            your acceptance of the modified terms. It is your responsibility to review these terms periodically for updates.
+        </p>
+
+        <h2>6. Governing Law</h2>
+        <p>
+            These Terms and Conditions are governed by and construed in accordance with the laws of the jurisdiction 
+            in which Spendly operates, and you irrevocably submit to the exclusive jurisdiction of the courts in that 
+            location.
+        </p>
+
+        <h2>7. Contact Us</h2>
+        <p>
+            If you have any questions about these Terms and Conditions, please contact us through your account or 
+            support channels.
+        </p>
+
+        <div class="terms-footer">
+            <a href="{{ url_for('landing') }}">← Back to Home</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .terms-content {
+        padding: 5rem 2rem 4rem;
+        background: var(--paper);
+        min-height: calc(100vh - 60px - 100px);
+    }
+    
+    .terms-inner {
+        max-width: 800px;
+        margin: 0 auto;
+        background: var(--paper-card);
+        padding: 3rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border);
+        box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+        line-height: 1.7;
+    }
+    
+    .terms-content h1 {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 2.5rem);
+        margin-bottom: 0.5rem;
+        color: var(--ink);
+        letter-spacing: -0.02em;
+    }
+    
+    .last-updated {
+        color: var(--ink-muted);
+        font-size: 0.85rem;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+    
+    .terms-content h2 {
+        font-size: 1.25rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--ink-soft);
+        font-weight: 600;
+        border-bottom: 1px solid var(--border-soft);
+        padding-bottom: 0.5rem;
+    }
+    
+    .terms-content h2:first-of-type {
+        margin-top: 0;
+    }
+    
+    .terms-content p {
+        color: var(--ink-muted);
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    
+    .terms-content ul {
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+        padding-left: 0;
+    }
+    
+    .terms-content li {
+        color: var(--ink-muted);
+        margin-bottom: 0.5rem;
+        position: relative;
+        padding-left: 0.5rem;
+    }
+    
+    .terms-content li::before {
+        content: "•";
+        color: var(--accent);
+        font-weight: bold;
+        position: absolute;
+        left: -1rem;
+        top: 0;
+    }
+    
+    .terms-footer {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border);
+        text-align: center;
+    }
+    
+    .terms-footer a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.9rem;
+        transition: color 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .terms-footer a:hover {
+        color: var(--ink);
+        text-decoration: underline;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .terms-content {
+            padding: 3rem 1rem 2rem;
+        }
+        
+        .terms-inner {
+            padding: 2rem;
+        }
+        
+        .terms-content h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+{% endblock %}
