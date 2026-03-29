@@ -286,7 +286,7 @@
 }
 
 .benefits-content {
-    max-width: 520px;
+    max-width: 560px;
 }
 
 .benefits-heading {
@@ -356,7 +356,7 @@
 
 .benefits-image img {
     width: 100%;
-    max-width: 450px;
+    max-width: 530px;
     height: auto;
     border-radius: var(--radius-lg);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
